@@ -27,9 +27,19 @@ ldconfig
 cd ..
 
 #Download and install tesseract language files
-wget https://github.com/tesseract-ocr/tessdata/raw/4.00/ben.traineddata
-wget https://github.com/tesseract-ocr/tessdata/raw/4.00/eng.traineddata
-wget https://github.com/tesseract-ocr/tessdata/raw/4.00/hin.traineddata
-wget https://github.com/tesseract-ocr/tessdata/raw/4.00/tha.traineddata
-wget https://github.com/tesseract-ocr/tessdata/raw/4.00/osd.traineddata
+wget https://github.com/tesseract-ocr/tessdata/raw/3.04.00/ben.traineddata
+wget https://github.com/tesseract-ocr/tessdata/raw/3.04.00/eng.traineddata
+wget https://github.com/tesseract-ocr/tessdata/raw/3.04.00/hin.traineddata
+wget https://github.com/tesseract-ocr/tessdata/raw/3.04.00/tha.traineddata
+wget https://github.com/tesseract-ocr/tessdata/raw/3.04.00/osd.traineddata
 mv *.traineddata /usr/local/share/tessdata
+
+#Download Hindi Cube data
+wget https://github.com/tesseract-ocr/tessdata/raw/3.04.00/hin.cube.bigrams
+wget https://github.com/tesseract-ocr/tessdata/raw/3.04.00/hin.cube.fold
+wget https://github.com/tesseract-ocr/tessdata/raw/3.04.00/hin.cube.lm
+wget https://github.com/tesseract-ocr/tessdata/raw/3.04.00/hin.cube.nn
+wget https://github.com/tesseract-ocr/tessdata/raw/3.04.00/hin.cube.params
+wget https://github.com/tesseract-ocr/tessdata/raw/3.04.00/hin.cube.word-freq
+wget https://github.com/tesseract-ocr/tessdata/raw/3.04.00/hin.tesseract_cube.nn
+mv hin.* /usr/local/share/tessdata
