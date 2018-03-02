@@ -8,9 +8,9 @@ wget ftp://mirror.switch.ch/pool/4/mirror/epel/7/ppc64/a/autoconf-archive-2016.0
 rpm -i autoconf-archive-2016.09.16-1.el7.noarch.rpm
 
 #Install Leptonica from Source
-wget http://www.leptonica.com/source/leptonica-1.74.4.tar.gz
-tar -zxvf leptonica-1.74.4.tar.gz
-cd leptonica-1.74.4
+wget http://www.leptonica.com/source/leptonica-1.75.3.tar.gz
+tar -zxvf leptonica-1.75.3.tar.gz
+cd leptonica-1.75.3
 ./autobuild
 ./configure
 make
